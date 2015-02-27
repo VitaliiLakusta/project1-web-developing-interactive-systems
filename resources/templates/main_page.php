@@ -6,10 +6,17 @@
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
           <h1 class="page-header">Dashboard</h1>
 
-          <div class="row placeholders">
+          <div class="row">
 
-	          <div class="col-md-12">
-	          	<canvas id="myChart" width="400" height="400"></canvas>
+	          <div class="col-md-6">
+	              <div class="canvas-holder">
+   				      <canvas id="lineChart1"></canvas>
+				  </div>
+	          </div>
+			  <div class="col-md-6">
+	              <div class="canvas-holder">
+   				      <canvas id="barChart2"></canvas>
+				  </div>
 	          </div>
 
 <!--             <div class="col-xs-6 col-sm-3 placeholder">
@@ -33,6 +40,7 @@
               <span class="text-muted">Something else</span>
             </div> -->
           </div>
+
 
           <div class="row comment-section">
 		        <form class="form">
