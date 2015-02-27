@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<<html>
+<html>
 <head lang="en">
 	<title>Usably</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
