@@ -107,6 +107,7 @@ body {
 
 /*MY CSS*/
 
-.comment-section {
-	max-width: 500px;
+.row {
+	margin-bottom: 40px;
 }
+
