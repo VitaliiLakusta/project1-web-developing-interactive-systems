@@ -5,7 +5,8 @@
 $config = array(
 	"db" => array(
 		"dbname" => "DB_NAME", 
-		"username" => "DB_USER",
+		"username" => "root",
+		"password" => "password",
 		"host" => "localhost"
 	),
 	"paths" => array(
@@ -23,6 +24,18 @@ defined("TEMPLATES_PATH")
 */
 ini_set("error_reporting", "true");
 error_reporting(E_ALL | E_STRICT);
+
+
+//TODO CREATE DB CONNECTION - TEST IT!
+
+// // Create connection
+// $conn = new mysqli($config["db"]["host"], $config["db"]["username"], $config["db"]["password"]);
+
+// // Check connection
+// if ($conn->connect_error) {
+//     die("Connection failed: " . $conn->connect_error);
+// } 
+// echo "<h1>Connected successfully</h1>";
 
 
 ?>

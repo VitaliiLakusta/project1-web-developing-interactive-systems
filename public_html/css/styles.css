@@ -117,7 +117,19 @@ body {
 }
 
 .usab-rate {
-	display: none;
-	margin-left: -500px;
+	/*display: none;*/
+	/*margin-left: -500px;*/
+  padding-top: 100px;
 }
 
+#detailed-insights-header {
+	display: none;
+}
+
+#totalUsabilityChart {
+  /*display: none;*/
+}
+
+.youtube-video {
+  display: none;
+}

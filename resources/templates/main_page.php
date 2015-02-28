@@ -12,10 +12,10 @@
 					<canvas id="totalUsabilityChart"></canvas>
 				</div>
 				<div class="col-md-6">
-					<h2 class="text-center usab-rate">Get total usability rate</h2>
+					<h2 class="text-left usab-rate">Get total usability rate</h2>
 				</div>
 			</div>
-			<h3>Get detailed insights!</h3>
+			<h3 class="text-center" id="detailed-insights-header">Get detailed insights!</h3>
 			<div class="row">
 				<div class="col-md-4">
 					<div class="canvas-holder">
