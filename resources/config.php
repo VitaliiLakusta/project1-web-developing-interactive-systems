@@ -4,9 +4,9 @@
 //TODO change db configuration after configuring XAMPP
 $config = array(
 	"db" => array(
-		"dbname" => "DB_NAME", 
-		"username" => "pma",
-		"password" => "",
+		"dbname" => "myDB", 
+		"username" => "root",
+		"password" => "root",
 		"host" => "localhost"
 	),
 	"paths" => array(
@@ -32,5 +32,4 @@ $conn = new mysqli($config["db"]["host"], $config["db"]["username"], $config["db
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
-
 ?>
