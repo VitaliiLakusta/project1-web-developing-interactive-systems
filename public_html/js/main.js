@@ -1,7 +1,7 @@
 
 Chart.defaults.global.responsive = true;
-createPolarChart();
 
+createPolarChart();
 $("#detailed-insights-header").fadeIn("slow", function() {
     createLineChart();
 });
@@ -53,8 +53,6 @@ function createPolarChart() {
         }
     });
 }
-
-
 
 /* create a line chart */
 // get canvas context
