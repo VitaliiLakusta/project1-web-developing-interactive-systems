@@ -55,4 +55,29 @@
 		$conn->close();
 	}
 
+	function getCommentsFromDB() {
+		global $config;
+
+		$conn = new mysqli($config["db"]["host"], $config["db"]["username"], $config["db"]["password"], $config["db"]["dbname"]);
+		if ($conn->connect_error) {
+			die ("Connection failed: " . $conn->connect_error);
+		}
+
+		$sql = "SELECT name, comment FROM Comments";
+		return $conn->query($sql);
+	}
+
+	function render($template, $data = array()) {
+		if (file_exists($template)) {
+			if (count($data) > 0) {
+				foreach ($data as $key => $value) {
+					if (strlen($key) > 0) {
+						${$key} = $value;
+					}
+				}
+			}
+		}
+		require($template);
+	}
+
 ?>

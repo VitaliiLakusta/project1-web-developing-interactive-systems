@@ -35,9 +35,12 @@
 			</div>
 
 			<div class="row">
-				<div class="col-md-12 youtube-video">
+				<div class="col-md-6 youtube-video">
 					<h3>Learn more about usability</h3>
 					<div id="player"></div>
+				</div>
+				<div class="col-md-6">
+					<?php require_once("comments.php"); ?>
 				</div>
 			</div>
 

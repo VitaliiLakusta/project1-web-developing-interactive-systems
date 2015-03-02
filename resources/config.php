@@ -1,4 +1,5 @@
 <?php 
+require_once(realpath(dirname(__FILE__) . "/functions.php"));
 
 //TODO change db configuration after configuring XAMPP
 $config = array(
@@ -23,5 +24,7 @@ defined("TEMPLATES_PATH")
 */
 ini_set("error_reporting", "true");
 error_reporting(E_ALL | E_STRICT);
+
+createCommentsTable();
 
 ?>
