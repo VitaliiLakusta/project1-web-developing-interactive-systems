@@ -16,7 +16,6 @@
 	$comments = array();
 	for ($i = 0; $i < $result->num_rows; $i++) {
 		$comments[$i] = $result->fetch_assoc();
-		var_dump($comments[$i]);
 	}
 
  	render(TEMPLATES_PATH . "/main_page.php", array("commentList" => $comments));

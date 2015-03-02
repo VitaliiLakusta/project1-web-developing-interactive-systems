@@ -23,9 +23,7 @@
 			)";		
 
 			if (!$conn->query($sql))
-				echo "Error creating table: " . $conn->error;
-			else
-				echo "Table successfully created!";			
+				echo "Error creating table: " . $conn->error;		
 		}
 
 		$conn->close();
@@ -46,9 +44,7 @@
 		$sql = "INSERT INTO Comments (name, comment)
 			VALUES ('". $name . "', '" . $comment . "')";
 
-		if ($conn->query($sql) === true) {
-			echo "New record successfully created";
-		} else {
+		if ($conn->query($sql) === false) {
 			echo "Error: " . $sql . "<br>" . $conn->error;
 		}
 

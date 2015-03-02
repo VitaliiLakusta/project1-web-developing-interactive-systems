@@ -208,7 +208,9 @@ body {
 }
 
 .nameInput {
+  max-width: 300px;
 }
 
 .commentInput {
+  max-width: 300px;
 }

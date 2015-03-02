@@ -15,7 +15,7 @@
 					<li>
 						<h5 class="commentName"><?= $commentList[$i]["name"]; ?></h5>
 						<div class="commentText">
-							<p class=""><?= $commentList[$i]["comment"]; ?></p> <span class="date sub-text">on March 5th, 2014</span>
+							<p class=""><?= $commentList[$i]["comment"]; ?></p>
 						</div>
 					</li>
 				</ul>
@@ -24,11 +24,9 @@
 				<div class="form-group nameInput">
 					<input name="name" class="form-control" type="text" placeholder="Your name" />
 				</div>
-				<br>
 				<div class="form-group commentInput">
-					<input name="comment" class="form-control" type="text" placeholder="Your comments" />
+					<textarea name="comment" class="form-control" type="text" placeholder="Your comments"></textarea>
 				</div>
-				<br>
 				<div class="form-group">
 					<input type="submit" value="Add comment" class="btn btn-primary" />
 				</div>
