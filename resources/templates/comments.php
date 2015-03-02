@@ -20,13 +20,13 @@
 					</li>
 				</ul>
 			<?php endfor ?>
-			<form class="form-inline" role="form">
+			<form  method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" class="form" role="form">
 				<div class="form-group nameInput">
-					<input class="form-control" type="text" placeholder="Your name" />
+					<input name="name" class="form-control" type="text" placeholder="Your name" />
 				</div>
 				<br>
 				<div class="form-group commentInput">
-					<input class="form-control" type="text" placeholder="Your comments" />
+					<input name="comment" class="form-control" type="text" placeholder="Your comments" />
 				</div>
 				<br>
 				<div class="form-group">

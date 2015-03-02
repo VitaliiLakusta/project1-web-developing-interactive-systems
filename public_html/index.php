@@ -5,6 +5,11 @@
 
 	require_once(TEMPLATES_PATH . "/header.php");
 
+	// add comment to a database 
+	if ($_SERVER["REQUEST_METHOD"] == "POST") {
+		insertCommentIntoDB($_POST["name"], $_POST["comment"]);
+	}
+
 	// get comments from a database
 	$result = getCommentsFromDB();
 
